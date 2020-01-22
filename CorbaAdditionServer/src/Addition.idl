@@ -4,9 +4,10 @@
  */
 module AdditionApp
 {
+typedef sequence<float> floatSeq;
   interface Addition
   {
-    long add(in long a,in long b);
+    floatSeq b_sort(in string tab);
     oneway void shutdown();
-    };
+  };
 };

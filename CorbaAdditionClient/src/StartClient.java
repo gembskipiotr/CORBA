@@ -25,14 +25,10 @@ public class StartClient {
             Scanner c=new Scanner(System.in);
             System.out.println("Welcome to the addition system:");          		    
 		    for(;;){
-		      System.out.println("Enter a:");
+		      System.out.println("Enter numbers:");
 		      String aa = c.nextLine();
-		      System.out.println("Enter b:");
-		      String bb = c.nextLine();
-		      int a=Integer.parseInt(aa);
-		      int b=Integer.parseInt(bb);
-		      int r=addobj.add(a,b);
-		      System.out.println("The result for addition is : "+r);
+		      float[] r=addobj.b_sort(aa);
+		      System.out.println("The result for addition is : "+Arrays.toString(r));
 		      System.out.println("-----------------------------------");
             }
        }
